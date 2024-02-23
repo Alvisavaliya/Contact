@@ -1,0 +1,14 @@
+<h2 align="center"><u>Update Contact</u></h2>
+<div class="container">
+    <div class="row">
+        <form action="" [formGroup]="profileForm" >
+            <input type="text" placeholder="Name" formControlName="name" size="40px"><br>
+    
+            <input type="text" placeholder="Contact number" formControlName="contactNo" size="40px"><br>
+            <input type="email" placeholder="Email" required size="40px" formControlName="email"> <br>
+    
+            <button class="btn btn-warning" [routerLink]="['/dashboard']">Back</button>
+            <button class="btn btn-primary" [disabled]="profileForm.invalid" (click)="updateContact()">Update</button>
+        </form>
+    </div>
+</div>

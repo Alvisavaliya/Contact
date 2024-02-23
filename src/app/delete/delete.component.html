@@ -1,0 +1,23 @@
+<!-- <div class="card">
+    <div class="card-body">
+        <h2>{{ContactAppRecord ?.id}}</h2>
+        <h2>{{ContactAppRecord?.name}}</h2>
+        <h2>{{ContactAppRecord?.email}}</h2>
+    </div>
+</div> -->
+
+        <div class="card" style="width: 18rem;  margin: 21ox;">
+            <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+            <div class="card-body">
+                <h2>{{ContactAppRecord?.id}}</h2>
+                <h4>{{ContactAppRecord?.name}}</h4>
+                <h4>{{ContactAppRecord?.email}}</h4>
+              <br><br>
+
+            </div>
+            
+        </div>
+          <button class="btn btn-primary" [routerLink]="['/dashboard']"> Back</button> &nbsp;&nbsp;
+          <button class="btn btn-warning" (click)="DeleteConfirm()">delete</button>
+          
+

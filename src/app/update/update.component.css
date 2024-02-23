@@ -1,0 +1,20 @@
+input{
+    color:white;
+    background-color:skyblue;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+div
+{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 50px;
+ 
+}
+h2
+{
+    color: skyblue;
+}

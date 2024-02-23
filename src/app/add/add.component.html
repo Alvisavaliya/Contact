@@ -1,0 +1,15 @@
+<h2 style="justify-content:center;" align="center">Add data</h2>
+<div class="container">
+    <div class="row">
+       
+        <form class="" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <input type="text" placeholder="Name" formControlName="name" size="40px" name="name"><br>
+    
+            <input type="text" placeholder="Contact number" formControlName="contactNo" name="contactNo" size="40px"><br>
+            <input type="email" placeholder="Email" formControlName="email" name="email" size="40px">  <br>
+    
+            <button class="btn btn-warning" [routerLink]="['/dashboard']">Back</button>
+            <button [disabled]="myForm.invalid" class="btn btn-primary" (click)="addContact()">Add</button>
+        </form>
+    </div>
+</div>
